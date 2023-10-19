@@ -1,0 +1,19 @@
+﻿<Window x:Class="Varinot_Vincent_pendu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Varinot_Vincent_pendu"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="600">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" FontSize="24" Text="Jeu du Pendu" />
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,60,0,0" FontSize="18" Text="Devinez le mot en 6 tentatives !" />
+        <TextBlock Name="Mot_Adeviner" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,100,0,0" FontSize="24" />
+        <TextBlock Name="Mot_Cache" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,150,0,0" FontSize="36" />
+        <TextBlock Name="Tentatives_Restantes" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,220,0,0" FontSize="18" />
+        <TextBox Name="Lettre_Saisie" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,260,0,0" Width="50" />
+        <Button Name="Bouton_Devine" Content="Devinez" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,260,0,0" Width="200" Height="50" Click="BoutonDevine_Click" />
+        <TextBlock Name="Resultat_Jeu" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,300,0,0" FontSize="24" Visibility="Hidden" />
+    </Grid>
+</Window>
